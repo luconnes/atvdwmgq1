@@ -1,35 +1,25 @@
-import { Contador } from "@/components/Contador";
-import { MyButton } from "@/components/MyButton";
-import Link from "next/link";
-
 export default function Home() {
-  let PI = 3.14159;
   return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <hr />
-      <Link href="/taskList">Task List</Link>
-      <hr />
-      <Link href="/foodList">Food List</Link>
-      <hr />
+    <div style={{ padding: 20 }}>
+      <h1>Lucas Ribeiro — Portfólio</h1>
+      <p>Estudante de Ciência da Computação | Desenvolvedor em formação</p>
+
+      <h2>Mini Bio</h2>
       <p>
-        Hello there.
-        <br />
-        <span className="blueText">How do you do?</span>
+        Tenho experiência em Python, Java, C e projetos acadêmicos de compiladores,
+        sistemas CRUD e aplicações inclusivas. Gosto de transformar ideias em
+        protótipos funcionais e aprender novas tecnologias.
       </p>
+
+      <h2>Projetos</h2>
+      <ul>
+        <li>Compilador acadêmico — análise léxica e sintática</li>
+        <li>Webdriver — CRUD em Python/SQLite para gerenciamento de arquivos</li>
+        <li>Instrumento Musical Tátil e Visual — inclusão para PCDs</li>
+      </ul>
+
       <hr />
-      <Contador />
-      <Contador />
-      <hr />
-      <MyButton />
-      <p>Doing math: {2 * PI}</p>
-      <hr />
-      <img
-        className="avatar"
-        src="https://www.w3schools.com/howto/img_avatar.png"
-        width={100}
-        height={100}
-      />
+     
     </div>
   );
 }

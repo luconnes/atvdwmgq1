@@ -1,11 +1,100 @@
 body {
-  background-color: blanchedalmond;
+  background-color: #fff8e7;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.blueText {
-  color: blue;
+/* Links e navegação */
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navegação */
+header nav a {
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Mini Bio / Portfolio */
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Avatar */
 .avatar {
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Jogo da Forca */
+.forca-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.forca-container input {
+  width: 50px;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.forca-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.forca-container button:hover {
+  background-color: #005bb5;
+}
+
+/* Letras corretas e erradas */
+.correct-letters {
+  color: green;
+  font-weight: bold;
+}
+
+.wrong-letters {
+  color: red;
+  font-weight: bold;
 }
