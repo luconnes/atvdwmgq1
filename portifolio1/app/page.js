@@ -1,7 +1,14 @@
 export default function Home() {
   return (
     <div style={{ padding: 20 }}>
-      <h1>Lucas Ribeiro — Portfólio</h1>
+      
+      {}
+      <img
+        src="/images/image.png"
+        alt="Foto de Lucas Ribeiro"
+        style={{ width: '300px', height: '300px', borderRadius: '50%', objectFit: 'cover', marginBottom: '20px' }}
+      />
+      
       <p>Estudante de Ciência da Computação | Desenvolvedor em formação</p>
 
       <h2>Mini Bio</h2>
@@ -19,7 +26,7 @@ export default function Home() {
       </ul>
 
       <hr />
-     
+      
     </div>
   );
 }
